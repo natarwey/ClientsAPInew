@@ -20,5 +20,6 @@ namespace ClientsAPI.Models
         public Nullable<int> RoleId { get; set; }
     
         public virtual Role Role { get; set; }
+        public int Id { get; internal set; }
     }
 }
