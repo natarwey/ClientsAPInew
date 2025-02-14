@@ -22,6 +22,7 @@ namespace ClientsAPI.Controllers
             return Ok(db.User.Select(u => new
             {
                 u.Name,
+                u.Age,
                 Role = u.Role.Name
             }));
         }
